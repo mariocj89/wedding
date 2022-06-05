@@ -395,13 +395,14 @@
 	<script src="js/main.js"></script>
 
 	<script>
-    var d = new Date(2022, 7, 9)
+    var d = new Date(2022, 7, 9, 20)
 
     // default example
     simplyCountdown('.simply-countdown-one', {
         year: d.getFullYear(),
         month: d.getMonth(),
-        day: d.getDate()
+        day: d.getDate(),
+        hours: d.getHours()
     });
 
     //jQuery example
@@ -409,6 +410,7 @@
         year: d.getFullYear(),
         month: d.getMonth(),
         day: d.getDate(),
+        hours: d.getHours(),
         enableUtc: false
     });
 </script>
